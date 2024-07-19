@@ -819,7 +819,7 @@ class PlayState extends MusicBeatState
 		{
 			if(OpenFlAssets.exists(folder))
 			{
-				for (file in OpenFlAssets.list().filter(text -> text.contains(folder)))
+				for (file in FileSystem.readDirectory(Generic.returnPath() + folder))
 				{
 					if(file.endsWith('.lua') && !filesPushed.contains(file))
 					{
