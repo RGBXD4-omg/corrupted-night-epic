@@ -32,6 +32,8 @@ class Main extends Sprite
 	{
 		super();
 
+		Generic.initCrashHandler();
+
 		if (stage != null)
 		{
 			init();
