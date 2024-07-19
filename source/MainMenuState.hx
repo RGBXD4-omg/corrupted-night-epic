@@ -222,7 +222,7 @@ class MainMenuState extends MusicBeatState
 		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
 		camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
 
-		if (eee)
+		/*if (eee)
 		{
 			var finalKey:FlxKey = FlxG.keys.firstJustPressed();
 			if(finalKey != FlxKey.NONE) {
@@ -279,7 +279,7 @@ class MainMenuState extends MusicBeatState
 					}
 				}
 			}
-		}
+		}*/
 		
 		if (!selectedSomethin)
 		{
