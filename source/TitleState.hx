@@ -101,6 +101,10 @@ class TitleState extends MusicBeatState
 			}
 		}
 		#end
+
+			#if android
+		FlxG.android.preventDefaultKeys = [BACK];
+		#end
 		
 		#if (desktop && MODS_ALLOWED)
 		var path = "mods/" + Paths.currentModDirectory + "/images/gfDanceTitle.json";
